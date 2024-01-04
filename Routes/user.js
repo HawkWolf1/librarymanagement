@@ -14,7 +14,6 @@ router.post('/addBook', authController.authenticate, booksController.books)
 router.get('/getBooks', booksController.showBooks)
 router.get('/displayRentedBooks', booksController.rentedBooksList)
 
-
 const rentController = require('../Controllers/rent')
 router.post('/rentSelectedBooks', authController.authenticate, rentController.rentedBooks)
 router.get('/getRentedBooks', authController.authenticate, rentController.fetchRentedBooks)

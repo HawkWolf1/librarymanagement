@@ -1,6 +1,6 @@
 async function showAvailableBooks() {
     try {
-        const response = await axios.get('http://localhost:5500/getBooksForRent');
+        const response = await axios.get('http://localhost:5500/getBooks');
 
         if (response.status === 200) {
             const books = response.data;
