@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+</head>
+<body>
+    <h2>ENTER YOUR CREDENTIALS</h2>
+    <form onsubmit="login(event)">
+        <p><label> EMAIL </label>
+        <input id="email" type="email" name="email" placeholder="Enter Email"><br>
+    
+        <label> PASSWORD </label>
+        <input id="password" type="password" name="password" placeholder="Enter Password" required ><br>
+    
+        <button> LOGIN </button>
+    </form>
+    <a href = "./signup.html"> NEW USER - SIGNUP</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<script src=login.js></script>
+
+</body>
+</html>

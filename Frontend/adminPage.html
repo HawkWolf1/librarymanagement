@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="adminPage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Book</h2>
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" placeholder="Enter Book Name">
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter Author">
+
+        <button onclick="addBook()">Add Book</button>
+
+        <hr>
+
+        <h2>Book List</h2>
+        <div id="bookList">
+            <button onclick="displayBooks()">Show List Of Books</button>
+            <ul id="booksContainer"></ul>
+        </div>
+
+        <hr>
+        <h2>Rented Books</h2>
+        <div id="rentedBookList">
+            <button onclick="displayRentedBooks()">Show Rented Books</button>
+            <ul id="rentedBooksContainer"></ul>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="adminPage.js"></script>
+</body>
+</html>
